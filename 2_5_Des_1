@@ -1,0 +1,6 @@
+# Pedir al usuario su nombre y ciudad de origen
+nombre = input("Ingrese su nombre: ")
+ciudad = input("Ingrese su ciudad de origen: ")
+
+# Imprimir un saludo personalizado
+print(f"¡Hola, {nombre} de {ciudad}! ¡Bienvenido!")
