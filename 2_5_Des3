@@ -1,0 +1,35 @@
+# Pedir al usuario los detalles de los productos
+print("Ingrese los detalles de tres productos:")
+
+print("\nProducto 1:")
+nombre1 = input("Nombre del producto: ")
+cantidad1 = int(input("Cantidad: "))
+precio1 = float(input("Precio por unidad: "))
+
+print("\nProducto 2:")
+nombre2 = input("Nombre del producto: ")
+cantidad2 = int(input("Cantidad: "))
+precio2 = float(input("Precio por unidad: "))
+
+print("\nProducto 3:")
+nombre3 = input("Nombre del producto: ")
+cantidad3 = int(input("Cantidad: "))
+precio3 = float(input("Precio por unidad: "))
+
+# Calcular los totales por producto
+total1 = cantidad1 * precio1
+total2 = cantidad2 * precio2
+total3 = cantidad3 * precio3
+
+# Calcular el total de la factura
+total_factura = total1 + total2 + total3
+
+# Imprimir la factura
+print("\n----- FACTURA -----")
+print("Producto    Cantidad    Precio Unitario    Total")
+print("-" * 50)
+print(f"{nombre1}    {cantidad1}    {precio1:.2f}    {total1:.2f}")
+print(f"{nombre2}    {cantidad2}    {precio2:.2f}    {total2:.2f}")
+print(f"{nombre3}    {cantidad3}    {precio3:.2f}    {total3:.2f}")
+print("-" * 50)
+print(f"Total a Pagar: {total_factura:.2f}")
